@@ -1,5 +1,4 @@
-e
-rk - JustListIt
+#Pre-work - JustListIt
 
 JustListIt is an android app that allows building a todo list and basic todo items management functionality including adding new items, editing and deleting an existing item.
 
@@ -19,7 +18,7 @@ The following **required** functionality is completed:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://imgur.com/a/wp03v' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/a/wp03v' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
