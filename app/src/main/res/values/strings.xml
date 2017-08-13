@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">JustListIt</string>
+    <string name="addItem">Add new Todo here</string>
+    <string name="add">Add</string>
+    <string name="editString">Edit your todo here:</string>
+    <string name="save">Save</string>
+</resources>
