@@ -27,15 +27,5 @@
         android:onClick="onAddItem"
         android:text="@string/add" />
 
-    <EditText
-        android:id="@+id/etAddItem"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/btnAddItem"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:ems="10"
-        android:hint="@string/addItem"
-        android:inputType="text" />
 
 </RelativeLayout>
