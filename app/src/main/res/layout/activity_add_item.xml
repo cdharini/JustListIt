@@ -12,7 +12,7 @@
         android:id="@+id/tvEditDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/editString"
+        android:text="@string/addString"
         android:layout_marginTop="20dp"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
 
@@ -71,7 +71,7 @@
         android:id="@+id/btnSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onSaveEdit"
+        android:onClick="onSave"
         android:text="@string/save"
         android:layout_below="@+id/dpDueDate"
         android:layout_alignRight="@+id/etToDoItem"
