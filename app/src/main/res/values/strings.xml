@@ -14,6 +14,6 @@
         <item>MEDIUM</item>
         <item>LOW</item>
     </string-array>
-    <string name="priority">Priority:</string>
-    <string name="duedate">Due Date:</string>
+    <string name="priority">Priority</string>
+    <string name="duedate">Due Date</string>
 </resources>

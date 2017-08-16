@@ -10,7 +10,8 @@
         android:gravity="center_vertical"
         android:layout_weight="1"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
-        android:minHeight="50dp"/>
+        android:minHeight="50dp"
+        android:layout_marginLeft="10dp"/>
 
     <TextView
         android:id="@+id/tvPriority"
@@ -18,5 +19,6 @@
         android:layout_height="match_parent"
         android:gravity="center_vertical"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
-        android:minHeight="50dp"/>
+        android:minHeight="50dp"
+        android:layout_marginRight="10dp"/>
 </LinearLayout>

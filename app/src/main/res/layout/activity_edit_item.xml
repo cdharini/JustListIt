@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,17 +13,22 @@
         android:layout_height="wrap_content"
         android:text="@string/editString"
         android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/secondary_text"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
 
     <EditText
         android:id="@+id/etToDoItem"
+        android:theme="@style/EditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
         android:layout_below="@+id/tvEditDescription"
         android:layout_marginTop="5dp"
         android:ems="10"
+        android:layout_marginLeft="10dp"
         android:inputType="text" />
 
     <TextView
@@ -34,6 +38,8 @@
         android:text="@string/priority"
         android:layout_below="@+id/etToDoItem"
         android:layout_marginTop="10dp"
+        android:textColor="@color/secondary_text"
+        android:layout_marginLeft="10dp"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
 
     <Spinner
@@ -44,6 +50,7 @@
         android:layout_toEndOf="@+id/tvPriority"
         android:gravity="center_vertical"
         android:layout_marginTop="15dp"
+        android:layout_marginLeft="50dp"
         android:layout_toRightOf="@+id/tvPriority"
         android:layout_gravity="right" />
 
@@ -54,6 +61,8 @@
         android:text="@string/duedate"
         android:layout_marginTop="10dp"
         android:layout_below="@+id/tvPriority"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/secondary_text"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>
 
     <DatePicker
@@ -74,8 +83,7 @@
         android:onClick="onSaveEdit"
         android:text="@string/save"
         android:layout_below="@+id/dpDueDate"
-        android:layout_alignRight="@+id/etToDoItem"
-        android:layout_alignEnd="@+id/etToDoItem"
-        android:layout_marginTop="10dp" />
+        android:layout_centerHorizontal="true"
+        android:theme="@style/Button"/>
 
 </RelativeLayout>

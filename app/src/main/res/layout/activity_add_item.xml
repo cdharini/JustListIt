@@ -14,16 +14,21 @@
         android:layout_height="wrap_content"
         android:text="@string/addString"
         android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/secondary_text"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
 
     <EditText
         android:id="@+id/etToDoItem"
+        android:theme="@style/EditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/tvEditDescription"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
         android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
         android:ems="10"
         android:inputType="text" />
 
@@ -34,6 +39,8 @@
         android:text="@string/priority"
         android:layout_below="@+id/etToDoItem"
         android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/secondary_text"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
 
     <Spinner
@@ -44,6 +51,7 @@
         android:layout_toEndOf="@+id/tvPriority"
         android:gravity="center_vertical"
         android:layout_marginTop="15dp"
+        android:layout_marginLeft="50dp"
         android:layout_toRightOf="@+id/tvPriority"
         android:layout_gravity="right" />
 
@@ -53,8 +61,10 @@
         android:layout_height="wrap_content"
         android:text="@string/duedate"
         android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_below="@+id/tvPriority"
-        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@color/secondary_text"/>
 
     <DatePicker
         android:id="@+id/dpDueDate"
@@ -63,6 +73,7 @@
         android:datePickerMode="spinner"
         android:calendarViewShown="false"
         android:startYear="2017"
+        android:theme="@style/datepicker"
         android:layout_below="@+id/tvDueDate"
         android:layout_gravity="right"
         android:layout_centerHorizontal="true" />
@@ -74,8 +85,7 @@
         android:onClick="onSave"
         android:text="@string/save"
         android:layout_below="@+id/dpDueDate"
-        android:layout_alignRight="@+id/etToDoItem"
-        android:layout_alignEnd="@+id/etToDoItem"
-        android:layout_marginTop="10dp" />
+        android:layout_centerHorizontal="true"
+        android:theme="@style/Button"/>
 
 </RelativeLayout>

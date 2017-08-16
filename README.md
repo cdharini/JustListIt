@@ -4,7 +4,7 @@ JustListIt is an android app that allows building a todo list and basic todo ite
 
 Submitted by: Dharini Chandrasekaran
 
-Time spent: ~10 hours spent in total
+Time spent: ~12 hours spent in total
 
 ## User Stories
 
@@ -21,7 +21,7 @@ The following **optional** features are implemented:
 * [x] Add support for completion due dates for todo items (and display within listview item)
 * [ ] Use a [DialogFragment](http://guides.codepath.com/android/Using-DialogFragment) instead of new Activity for editing items
 * [x] Add support for selecting the priority of each todo item (and display in listview item)
-* [ ] Tweak the style improving the UI / UX, play with colors, images or backgrounds
+* [x] Tweak the style improving the UI / UX, play with colors, images or backgrounds
 
 The following **additional** features are implemented:
 
@@ -31,7 +31,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![Video Walkthrough](codepath2.gif)
+![Video Walkthrough](codepath3.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -56,7 +56,7 @@ The convertView parameter in the getView method of ArrayAdapter allows us a chan
 
 Describe any challenges encountered while building the app.
 
-This basic version did not pose many challenges, I will update this section once I add more functionality to the application.
+UX design has been a learning experience, especially Material Design. While playing around with the Styles and Themes has been fun, it is time consuming and occasionally becomes tedious. It has also been hard finding out all the different XML attribute combinations when designing a layout or style.
 
 ## License
 
