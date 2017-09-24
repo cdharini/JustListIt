@@ -188,9 +188,12 @@ public class ToDoDatabaseHelper extends SQLiteOpenHelper {
      * Gets a Cursor to the items table
      * @return cursor
      */
-    public Cursor getCursor() {
+    public Cursor getCursorSortByPriority() {
         SQLiteDatabase db = getWritableDatabase();
-        String SELECT_ITEMS_QUERY = String.format("SELECT * FROM %s",  TABLE_TODOITEMS);
+        String SELECT_ITEMS_QUERY = String.format("SELECT * FROM %s ORDER BY CASE %s WHEN 'HIGH' THEN 1\n" +
+                "WHEN 'MEDIUM' THEN 2\n" +
+                "WHEN 'LOW' THEN 3\n" +
+                "ELSE 4 END",  TABLE_TODOITEMS, KEY_PRIORITY);
 
         Cursor todoCursor = db.rawQuery(SELECT_ITEMS_QUERY, null);
         return todoCursor;

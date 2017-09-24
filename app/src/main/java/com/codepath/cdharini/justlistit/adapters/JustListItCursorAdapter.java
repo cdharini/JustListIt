@@ -1,4 +1,4 @@
-package com.codepath.cdharini.justlistit;
+package com.codepath.cdharini.justlistit.adapters;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CursorAdapter;
 import android.widget.TextView;
+
+import com.codepath.cdharini.justlistit.R;
 
 /**
  * Created by dharinic on 8/13/17.

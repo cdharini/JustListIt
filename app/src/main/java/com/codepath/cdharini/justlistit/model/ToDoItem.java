@@ -1,10 +1,12 @@
 package com.codepath.cdharini.justlistit.model;
 
+import android.support.annotation.NonNull;
+
 /**
  * Model of the ToDoItem in our database
  * Created by dharinic on 8/13/17.
  */
-public class ToDoItem {
+public class ToDoItem{
     private String mTodoItem;
     private String mDate;
     private Priority mPriority;

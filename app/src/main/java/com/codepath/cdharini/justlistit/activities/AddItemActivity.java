@@ -1,4 +1,4 @@
-package com.codepath.cdharini.justlistit;
+package com.codepath.cdharini.justlistit.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -9,10 +9,10 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
 
+import com.codepath.cdharini.justlistit.R;
 import com.codepath.cdharini.justlistit.model.ToDoDatabaseHelper;
 import com.codepath.cdharini.justlistit.model.ToDoItem;
 
-import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 

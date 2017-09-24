@@ -1,4 +1,4 @@
-package com.codepath.cdharini.justlistit;
+package com.codepath.cdharini.justlistit.activities;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.codepath.cdharini.justlistit.adapters.JustListItCursorAdapter;
+import com.codepath.cdharini.justlistit.R;
 import com.codepath.cdharini.justlistit.model.ToDoDatabaseHelper;
 
 public class MainActivity extends AppCompatActivity {
@@ -31,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         setupListViewListener();
 
         dBHelper = ToDoDatabaseHelper.getInstance(MainActivity.this);
-        mCursorAdapter = new JustListItCursorAdapter(MainActivity.this, dBHelper.getCursor());
+        mCursorAdapter = new JustListItCursorAdapter(MainActivity.this, dBHelper.getCursorSortByPriority());
         mListView.setAdapter(mCursorAdapter);
     }
 
@@ -86,11 +88,11 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        mCursorAdapter.changeCursor(dBHelper.getCursor());
+        mCursorAdapter.changeCursor(dBHelper.getCursorSortByPriority());
     }
 
     void removeItem(long id) {
         dBHelper.deleteItem(id);
-        mCursorAdapter.changeCursor(dBHelper.getCursor());
+        mCursorAdapter.changeCursor(dBHelper.getCursorSortByPriority());
     }
 }

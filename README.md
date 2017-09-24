@@ -26,6 +26,8 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 * [x] Add a confirmation dialog before deleting the todo item
+* [ ] Use a DialogFragment to display AlertDialog
+* [x] Order todo items by priority
 
 ## Video Walkthrough
 
